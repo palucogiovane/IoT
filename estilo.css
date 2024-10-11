@@ -1,0 +1,254 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    color:#fff;
+    height:100vh;
+    flex-direction:column;
+}
+
+.carbon{
+    background-image: radial-gradient(goldenrod  3px, transparent 3px);
+    background-size:  10px 10px;
+    background-position: 0 0,5px 5px;
+    background-color: #ffffff00;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -3;
+}
+
+.gradient{
+    background-color: rgba(0, 0, 0, 0);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, #000000 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, #000000 100%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+}
+
+svg{
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 15vw 10vw 10vw 10vw 10vw 10vw 35vw;
+    grid-auto-rows: 6vw;
+    margin-bottom: 2vw;
+}
+.row3{
+    display: grid;
+    grid-template-rows: 10vw 10vw 10vw;
+}
+
+.row4{
+    display: grid;
+    grid-template-rows: 12vw 10vw 10vw;
+}
+
+.column5{
+    display: grid;
+    grid-template-columns: 7vw 1vw 7vw 1vw 7vw 1vw 7vw;
+}
+
+.column3{
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.digital{
+    width: 29vw;
+    height: 20vw;
+    background-color: darkviolet;
+    position: relative;
+    box-shadow: 0.5px 0 12px 5px #000000;
+    -webkit-box-shadow:  0.5px 0 12px 5px #000000;
+    -moz-box-shadow:  0.5px 0 12px 5px #000000;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 2vw;
+    margin: 2vw;
+}
+
+.button{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select:none;
+    appearance: none;
+    -webkit-appearance:none;
+    cursor: pointer;
+}
+
+.button:focus{
+    -webkit-tap-hilight-color:rgba(0, 0, 0, 0)!important;
+}
+
+/*
+.buttons button{
+    font-size: 4vw;
+    boder-radius:5vw;
+    background:radial-gradient(#121212 20%, #101010 50%, #000000 58%, #1371ff 61%, #080808 64%, #27272727 27%, #101010 70%);
+    color:#fff;
+    border:nome;
+    box-shadow: 0.5px 0 12px 5px #000000;
+    -webkit-box-shadow:  0.5px 0 12px 5px #000000;
+    -moz-box-shadow:  0.5px 0 12px 5px #000000;
+
+}
+*/
+
+.slider{
+    transform: rotate(90deg);
+    appearance: none;
+    -webkit-appearance: none;
+    width: 17vw;
+    height: 6vw;
+    border-radius: 3vw;
+    outline:none;
+    background:radial-gradient(#000000 50%, #181818 50%, #303030 62%, #707070 65%, #ffffff 67%, rgba(0,0,0,0) 70%);
+    
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 3vw;
+    background:radial-gradient(#080808 45%, darkviolet 50%, #000000 56%, #ffffff 60%, #505050 70%);
+    cursor: pointer;
+    -webkit-box-shadow:  0.5px 0 12px 5px #000000;
+    -moz-box-shadow:  0.5px 0 12px 5px #cccccc;
+    box-shadow:  0.5px 0 12px 5px #c4c4c4; 
+}
+
+.slider::-moz-range-thumb{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 3vw;
+    background:radial-gradient(#080808 45%, #07c900 50%, #818181 56%, #dadada 60%, #e9e9e9 70%);
+    cursor: pointer;
+    -webkit-box-shadow:  0.5px 0 12px 5px #000000;
+    -moz-box-shadow:  0.5px 0 12px 5px #cccccc;
+    box-shadow:  0.5px 0 12px 5px #c4c4c4; 
+}
+
+.direcional{
+    background: radial-gradient(#121212 46%, #101010 50%, #000000 56%, darkviolet 61%, #080808 64%, #272727 67%, #101010 70%);
+    border-radius: 15vw;
+    -webkit-box-shadow:  0.5px 0 12px 5px #000000;
+    -moz-box-shadow:  0.5px 0 12px 5px #cccccc;
+    box-shadow:  0.5px 0 12px 5px #c4c4c4; 
+
+}
+header .button{
+    width: 5vw;
+    height: 3vw;
+    border-radius: 1vw;
+    border: none;
+    font-size: 1.5vw;
+    color: #fff;
+    background: #fff;
+
+    background: #000000;
+    background: -webkit-linear-gradient(0deg, #000000 0%, #505050 100%);
+    background: linear-gradient(0deg, #000000 0%, #505050 100%);
+
+    -webkit-box-shadow: 0.5px 0 12px 5px #000000;
+    -moz-box-shadow: 0.5px 0 12px 5px #000000;
+    box-shadow: 0.5px 0 12px 5px #000000;
+}
+header .button:active{
+    background: #303030;
+    background: -webkit-linear-gradient(0deg, #303030 0%, #151515 100%);
+    background: linear-gradient(0deg, #303030 0%, #151515 100%);
+}
+main{
+    display: grid;
+    grid-template-columns: 30vw 30vw 40vw;
+    grid-auto-rows: 30vw;
+}
+.DisplayButton{
+    position: relative;
+    top: 19.5vw;
+    z-index: 1;
+    border-radius: 4vw;
+    width: 4vw;
+    height: 4vw;
+
+user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select:none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 4px;
+    font-size: 2vw;
+}
+
+.DisplayButton:focus{
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0) !important;
+}
+
+.DisplayButton:active{
+    background: radial-gradient(#080808 20%, #060606 50%, #000000 58%, #1158c3 61%, #080808 64%, #171717 67%, #101010 70%);
+    color: #ffffff;
+}
+.painel{
+    background-image: radial-gradient(rgba(250, 214, 10, 0.404) 3px, transparent 3px), radial-gradient(steelblue 3px, transparent 3px);
+    background-size: 10px 10px;
+    background-position: 0 0,5px 5px;
+    background-color: steelblue;
+    background-color: steelblue;
+    position: relative;
+    top: -1vw;
+    left: 2vw;
+    border-radius: 3vw;
+    display: inline-grid;
+    grid-template-rows: 0.3vw;
+    grid-template-columns:33vw;
+    align-items: center;
+
+}
+.conteudo{
+    margin: 0.5vw;
+    background: rgb(0, 204, 0);
+    width: 26.5vw;
+    height: 13.5vw;
+    z-index: 1;
+    padding: 8px;
+    color: #ffffff;
+    font-size: 1vw;
+}
+.direcional button{
+    background: none;
+    border: none;
+    font-size: 3vw;
+    color: #fff;
+}
+.direcional button:active{
+    background: radial-gradient(#121212 18%, #151515 20%, #121212 40%, rgba(0,0,0,0) 80%);
+}
